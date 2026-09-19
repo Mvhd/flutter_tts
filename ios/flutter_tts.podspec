@@ -19,7 +19,6 @@ A flutter text to speech plugin
   s.ios.deployment_target = '8.0'
   s.swift_version = '4.2'
   s.static_framework = true
-  s.source_files = 'flutter_tts/Sources/**/*'
-  s.public_header_files = 'flutter_tts/Sources/flutter_tts_objc/include/**/*.h'
+  s.source_files = 'flutter_tts/Sources/flutter_tts/**/*'
 end
 

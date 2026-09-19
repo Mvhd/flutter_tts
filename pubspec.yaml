@@ -14,18 +14,18 @@ flutter:
     platforms:
       android:
         package: com.eyedeadevelopment.fluttertts
-        pluginClass: FlutterTtsPlugin
+        pluginClass: SwiftFlutterTtsPlugin
       ios:
-        pluginClass: FlutterTtsPlugin
+        pluginClass: SwiftFlutterTtsPlugin
       macos:
-        pluginClass: FlutterTtsPlugin
+        pluginClass: SwiftFlutterTtsPlugin
       windows:
-        pluginClass: FlutterTtsPlugin
+        pluginClass: SwiftFlutterTtsPlugin
         supportedVariants:
           - uwp
           - win32
       web:
-        pluginClass: FlutterTtsPlugin
+        pluginClass: SwiftFlutterTtsPlugin
         fileName: flutter_tts_web.dart
 
 environment:

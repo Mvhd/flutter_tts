@@ -3,9 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "flutter_tts",
-    platforms: [
-        .iOS("13.0")
-    ],
+    platforms: [.iOS("13.0")],
     products: [
         .library(name: "flutter-tts", targets: ["flutter_tts"])
     ],
@@ -14,17 +12,8 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "flutter_tts_objc",
-            dependencies: [
-                .product(name: "FlutterFramework", package: "FlutterFramework")
-            ],
-            path: "Sources/flutter_tts_objc",
-            publicHeadersPath: "include"
-        ),
-        .target(
             name: "flutter_tts",
             dependencies: [
-                "flutter_tts_objc",
                 .product(name: "FlutterFramework", package: "FlutterFramework")
             ],
             path: "Sources/flutter_tts"

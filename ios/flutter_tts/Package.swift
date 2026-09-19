@@ -14,17 +14,8 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "flutter_tts_objc",
-            dependencies: [
-                .product(name: "FlutterFramework", package: "FlutterFramework")
-            ],
-            path: "Sources/flutter_tts_objc",
-            publicHeadersPath: "include"
-        ),
-        .target(
             name: "flutter_tts",
             dependencies: [
-                "flutter_tts_objc",
                 .product(name: "FlutterFramework", package: "FlutterFramework")
             ],
             path: "Sources/flutter_tts"
